@@ -1,0 +1,139 @@
+<!-- Global CSS -->
+<link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/global_bcp.css">
+<!-- Jquery UI -->
+<link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/jquery-ui.min.css">
+
+<!-- Javascript general libraries -->
+<script type="text/javascript" src="../SiteAssets/JS/jquery-3.1.1.min.js"></script>
+<!-- Jquery UI -->
+<script type="text/javascript" src="../SiteAssets/JS/jquery-ui.min.js"></script>
+
+<!-- SPServices -->
+<script type="text/javascript" src="../SiteAssets/JS/jquery.SPServices-2014.02.min.js"></script>
+
+
+<!-- Global_bcp -->
+<script type="text/javascript" src="../SiteAssets/JS/global_bcp.js"></script>
+
+<!-- Create BCP create function -->
+<script type="text/javascript" src="../SiteAssets/JS/appl_createbcp.js"></script>
+
+
+<h2>
+    Creating Business Continuity Plan
+</h2>
+<br/>
+<table class="createFormBCP">
+    <tr>
+        <td>
+            <label for="txt_BCPName" id="BCPName-ariaLabel" class="lblTitleBCPCoverPage">BCP Name : </label>
+        </td>
+        <td>
+            <input id="txt_BCPName" name="txt_BCPName" type="text" class="required" title="BCP Name. This is a required field">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_BCPDescription" id="BCPName-ariaLabel" class="lblTitleBCPCoverPage">BCP Purpose : </label>
+        </td>
+        <td>
+            <textarea id="txt_BCPDescription" rows="3" cols="40"> 
+            </textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_owner" id="BCPName-ariaLabel" class="lblTitleBCPCoverPage">BCP Owner : </label>
+        </td>
+        <td>
+            <input id="txt_BCPOwner" name="txt_BCPName" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_BCPMembers" id="BCPName-ariaLabel" class="lblTitleBCPCoverPage">BCP Members : </label>
+        </td>
+        <td>
+            <input id="txt_BCPMembers" name="txt_BCPOwner" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_BCPVisitors" id="BCPName-ariaLabel" class="lblTitleBCPCoverPage">BCP Visitors : </label>
+        </td>
+        <td>
+            <input id="txt_BCPVisitors" name="txt_BCPName" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="sel_Criticality" id="CriticalityName-ariaLabel" class="lblTitleBCPCoverPage">Criticality : </label>
+        </td>
+        <td>
+            <select id="sel_CriticalityName" name="sel_CriticalityName" aria-labelledby="CriticalityName-ariaLabel">
+                <option value="High-Critical">High-Critical</option>
+                <option value="Medium-Critical">Medium-Critical</option>
+                <option value="Low-Critical">Low-Critical</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="sel_DivisionName" id="DivisionName-ariaLabel" class="lblTitleBCPCoverPage">Division Name : </label>
+        </td>
+        <td>
+            <select id="sel_DivisionName" name="sel_DivisionName" aria-labelledby="DivisionName-ariaLabel">
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="sel_SectionName" id="SectionName-ariaLabel" class="lblTitleBCPCoverPage">Section Name : </label>
+        </td>
+        <td>
+            <select id="sel_SectionName" name="sel_SectionName">
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_UnitName" id="UnitName-ariaLabel" class="lblTitleBCPCoverPage">Unit Name : </label>
+        </td>
+        <td>
+            <select id="sel_UnitName" name="sel_SectionName">
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="sel_LegalEntity" id="LegalEntity-ariaLabel" class="lblTitleBCPCoverPage">Legal Entity : </label>
+        </td>
+        <td>
+            <select id="sel_LegalEntity" name="sel_LegalEntity" >
+            </select>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="txt_Location" id="Location-ariaLabel" class="lblTitleBCPCoverPage">Location : </label>
+        </td>
+        <td>
+            <select id="sel_Location" name="sel_Location" >
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div stye="align:right">
+                <div  id="btnCreateBCP" class="bcpCreateButton">Create</div>
+            </div>
+        </td>
+    </tr>
+</table>
+ 

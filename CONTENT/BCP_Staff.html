@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Deutsche Börse</title>
+    <script type="text/javascript" src="../../SiteAssets/js/jquery.js"></script>
+    <script type="text/javascript" src="../../SiteAssets/js/BCP_Staff.js"></script>
+    <script type="text/javascript" src="../../SiteAssets/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../SiteAssets/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../SiteAssets/css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../SiteAssets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../SiteAssets/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../SiteAssets/css/dataTables.bootstrap.min.css">
+    <script src="../../SiteAssets/js/jquery-ui.min.js"></script>
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        table.no-footer.dataTable {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+            border-bottom-width: 1px;
+        }
+
+        .custom-combobox {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-combobox-toggle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin-left: -1px;
+            padding: 0;
+        }
+
+        .custom-combobox-input {
+            margin: 0;
+            padding: 5px 10px;
+        }
+
+        .custom-combobox {
+            width: 80%;
+        }
+
+        .custom-combobox-input {
+            width: 100%;
+        }
+
+        table.dataTable {
+            border-collapse: collapse;
+        }
+
+		table.dataTable.table-bordered th:last-child, table.dataTable.table-bordered th:last-child, table.dataTable.table-bordered td:last-child, table.dataTable.table-bordered td:last-child
+		{
+			border-right-width:1px;
+		}
+
+        #tblWorkspace > thead > tr:first-child > th:first-child {
+            border-top-left-radius: 6px;
+        }
+
+        #tblWorkspace > thead > tr:first-child > th:first-child {
+            background: none;
+             padding: 0px; 
+        }
+
+        /*#tblWorkspace > thead > tr:first-child > th:last-child,*/ .disablebutton {
+            background: none;
+            background-image: none !important;
+        }
+
+        #tblWorkspace > thead > tr:first-child > th:last-child {
+            border-top-right-radius: 6px;
+        }
+
+
+        #tblWorkspace > tbody > tr:last-child > td:first-child {
+            border-bottom-left-radius: 6px;
+        }
+
+        #tblWorkspace > tbody > tr:last-child > td:last-child {
+            border-bottom-right-radius: 6px;
+        }
+
+        #tblWorkspace input {
+            width: 45%;
+            min-width: 200px;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            height: 20px;
+        }
+
+        .ui-autocomplete {
+            max-height: 400px;
+            max-width: 300px;
+            overflow-y: auto; /* prevent horizontal scrollbar */
+            overflow-x: hidden; /* add padding to account for vertical scrollbar */
+            z-index: 1000 !important;
+        }
+
+        .centeralign {
+            text-align: center;
+        }
+
+        input::-ms-clear {
+            display: none !important;
+        }
+
+        .dataTables_length {
+            float: right !important;
+            text-align: right !important;
+        }
+
+        .dataTables_filter {
+            float: left !important;
+            text-align: left !important;
+        }
+
+            .dataTables_filter input {
+                border: 1px solid #c5c5c5;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+
+        .btnStyle {
+            min-width: 6em;
+            padding: 5px 8px !important;
+            border: 1px solid #ababab;
+            background-color: #fdfdfd;
+            background-color: #fdfdfd;
+            margin-left: 10px;
+            font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+            font-size: 11px;
+            color: #444;
+        }
+
+        td.details-control {
+            /*background: url('../SiteAssets/images/details_open.png') no-repeat center center;*/
+             cursor: pointer;
+            border-right: 0px solid #ddd;
+			width:3%;
+			text-align:center;
+        }
+
+        tr.shown td.details-control {
+            /*background: url('../SiteAssets/images/details_close.png') no-repeat center center;*/
+			 border-right: 0px solid #ddd;
+			text-align:center;  
+        }
+
+        div.container {
+            width: 90%;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        table.dataTable {
+            border-collapse: collapse !important;
+        }
+
+        .hidedisplay {
+            display: none;
+        }
+
+        table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
+             padding: 8px; 
+        }
+
+        table.dataTable span.highlight {
+            background-color: #FFFF88;
+        }
+
+        #loading {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: block;
+            opacity: 0.8;
+            background-color: #ddd;
+            z-index: 99;
+            text-align: center;
+        }
+
+		.tdcenteralign {
+            text-align: center;
+			vertical-align:middle !important;
+        }
+
+        #loading-image {
+            position: absolute;
+            top: 100px;
+            left: 240px;
+            z-index: 100;
+        }
+
+		table.dataTable thead .sorting_asc::after,table.dataTable thead .sorting::after, table.dataTable thead .sorting_desc::after, table.dataTable thead .sorting::after
+		{
+			content:none;
+		}
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="hdnrstrategy" /> 
+    <input type="hidden" id="hdncolumns" />
+    <input type="hidden" id="hdnallrstrategy" /> 
+    <input type="hidden" id="hdnUserPermission" />
+    <input type="hidden" id="hdnSearchText" />
+    <div id="divSearch" style="display:none;padding-top:10px;">
+        <table class="table table-striped table-bordered" style="width:30%" align="left">
+            <tr>
+                <td>Recovery Strategy</td> 
+                <td rowspan="2" width="10%" style="vertical-align:middle"><button type='button' id='btnReset' class='btnStyle' onclick='ResetFilter();'>Reset</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="drpRstrategy" style="width:90%"></select>
+                </td> 
+            </tr>
+        </table>
+    </div>
+    <div style="padding-top:10px;">
+        <table id="tblWorkspace" class="table table-striped table-bordered" align="left" cellspacing="0" style="width:100%">
+            <thead>
+                <tr>
+                    <th id='firstcolumn' style="width:3%;vertical-align:middle"><!--<img id="imgheader" style="cursor:pointer" src="../SiteAssets/images/details_open.png" alt="open all"></span>--></th>
+                    <th style="width:87%" id="secondcolumn">Task Type</th>
+                    <th style="width:10%" id="thirdcolumn">Total Tasks</th> 
+					<th style="display:none"></th>
+                    <th style="display:none"></th>
+                    <th style="display:none"></th> 
+					<th style="display:none"></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div id="loading" class="modal fade" tabindex="-1" role="dialog" style="display:none">
+        <div class="modal-dialog" style="height: 100px; width: 300px; position: fixed; left: 50%;
+        top: 50%; margin: -25px 0 0 -25px; z-index: 1000;">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <table style="vertical-align: top; padding: 8px">
+                        <tr>
+                            <td width="5%">
+                                <img src="../SiteAssets/images/loading.gif" />
+                            </td>
+                            <td width="90%" valign="bottom">
+                                <p>
+                                    Loading the data. Please wait...
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</body> 
+</html>   

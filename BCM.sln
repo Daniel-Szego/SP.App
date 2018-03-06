@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JS", "JS", "{4FC5F1B2-E185-42D9-8F55-BB3736AAC284}"
+	ProjectSection(SolutionItems) = preProject
+		JS\appl_createbcp.js = JS\appl_createbcp.js
+		JS\appl_dashboard.js = JS\appl_dashboard.js
+		JS\appl_searchbcp.js = JS\appl_searchbcp.js
+		JS\appl_viewbcp.js = JS\appl_viewbcp.js
+		JS\BCP_Staff.js = JS\BCP_Staff.js
+		JS\BCP_Workspace.js = JS\BCP_Workspace.js
+		JS\BCP_Workspace_TAB.js = JS\BCP_Workspace_TAB.js
+		JS\buttons.flash.min.js = JS\buttons.flash.min.js
+		JS\buttons.html5.min.js = JS\buttons.html5.min.js
+		JS\buttons.print.min.js = JS\buttons.print.min.js
+		JS\createsubsitetest.js = JS\createsubsitetest.js
+		JS\dataTables.buttons.min.js = JS\dataTables.buttons.min.js
+		JS\dataTables.responsive.js = JS\dataTables.responsive.js
+		JS\dataTables.responsive.min.js = JS\dataTables.responsive.min.js
+		JS\global_bcp.js = JS\global_bcp.js
+		JS\jquery-3.1.1.min.js = JS\jquery-3.1.1.min.js
+		JS\jquery-ui.min.js = JS\jquery-ui.min.js
+		JS\jquery.dataTables.min.js = JS\jquery.dataTables.min.js
+		JS\jquery.js = JS\jquery.js
+		JS\jquery.SPServices-2014.02.min.js = JS\jquery.SPServices-2014.02.min.js
+		JS\jszip.min.js = JS\jszip.min.js
+		JS\pdfmake.min.js = JS\pdfmake.min.js
+		JS\vfs_fonts.js = JS\vfs_fonts.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CONTENT", "CONTENT", "{987E0917-823A-48A0-8EBC-0FA3DA0048BF}"
+	ProjectSection(SolutionItems) = preProject
+		CONTENT\BCP_Staff.html = CONTENT\BCP_Staff.html
+		CONTENT\BCP_Workspace.html = CONTENT\BCP_Workspace.html
+		CONTENT\BCP_Workspace_TAB.html = CONTENT\BCP_Workspace_TAB.html
+		CONTENT\content_createbcp.htm = CONTENT\content_createbcp.htm
+		CONTENT\content_dashboard.htm = CONTENT\content_dashboard.htm
+		CONTENT\content_global.htm = CONTENT\content_global.htm
+		CONTENT\content_searchbcp.htm = CONTENT\content_searchbcp.htm
+		CONTENT\content_viewbcp.htm = CONTENT\content_viewbcp.htm
+		CONTENT\createsubsite.htm = CONTENT\createsubsite.htm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{477F321A-734B-47BC-ADBB-43DA7E945A14}"
+	ProjectSection(SolutionItems) = preProject
+		CSS\bootstrap.min.css = CSS\bootstrap.min.css
+		CSS\buttons.dataTables.min.css = CSS\buttons.dataTables.min.css
+		CSS\dataTables.bootstrap.min.css = CSS\dataTables.bootstrap.min.css
+		CSS\dataTables.jqueryui.min.css = CSS\dataTables.jqueryui.min.css
+		CSS\global_bcp.css = CSS\global_bcp.css
+		CSS\jquery-ui.min.css = CSS\jquery-ui.min.css
+		CSS\jquery.dataTables.min.css = CSS\jquery.dataTables.min.css
+		CSS\responsive.dataTables.css = CSS\responsive.dataTables.css
+		CSS\responsive.dataTables.min.css = CSS\responsive.dataTables.min.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PICS", "PICS", "{AC5EB696-FF02-4E91-B1BA-1C89A3D9401D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POWERSHELL", "POWERSHELL", "{60AE4C76-0FE0-4A30-A986-150A7FF60B6C}"
+	ProjectSection(SolutionItems) = preProject
+		POWERSHELL\Create_ErrorLogList.ps1 = POWERSHELL\Create_ErrorLogList.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{3BB1804B-3890-4416-8696-E14E21EEF2D2}"
+	ProjectSection(SolutionItems) = preProject
+		images\favicon.ico = images\favicon.ico
+		images\loading.gif = images\loading.gif
+		images\sort_asc.png = images\sort_asc.png
+		images\sort_asc_disabled.png = images\sort_asc_disabled.png
+		images\sort_both.png = images\sort_both.png
+		images\sort_desc.png = images\sort_desc.png
+		images\sort_desc_disabled.png = images\sort_desc_disabled.png
+		images\Sorting icons.psd = images\Sorting icons.psd
+		images\ui-icons_444444_256x240.png = images\ui-icons_444444_256x240.png
+		images\ui-icons_555555_256x240.png = images\ui-icons_555555_256x240.png
+		images\ui-icons_777620_256x240.png = images\ui-icons_777620_256x240.png
+		images\ui-icons_777777_256x240.png = images\ui-icons_777777_256x240.png
+		images\ui-icons_cc0000_256x240.png = images\ui-icons_cc0000_256x240.png
+		images\ui-icons_ffffff_256x240.png = images\ui-icons_ffffff_256x240.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLLS", "DLLS", "{466A2894-A4DB-4308-B5A8-79CD7AD18F97}"
+	ProjectSection(SolutionItems) = preProject
+		DLLS\Microsoft.SharePoint.Client.dll = DLLS\Microsoft.SharePoint.Client.dll
+		DLLS\Microsoft.SharePoint.Client.Runtime.dll = DLLS\Microsoft.SharePoint.Client.Runtime.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CLIENTSIDEPOWERSHELL", "CLIENTSIDEPOWERSHELL", "{7E147366-4F71-459C-B06E-657850A5E76A}"
+	ProjectSection(SolutionItems) = preProject
+		CLIENTSIDEPOWERSHELL\spps.ContentTypes.psm1 = CLIENTSIDEPOWERSHELL\spps.ContentTypes.psm1
+		CLIENTSIDEPOWERSHELL\spps.features.psm1 = CLIENTSIDEPOWERSHELL\spps.features.psm1
+		CLIENTSIDEPOWERSHELL\spps.global.psm1 = CLIENTSIDEPOWERSHELL\spps.global.psm1
+		CLIENTSIDEPOWERSHELL\spps.lists.psm1 = CLIENTSIDEPOWERSHELL\spps.lists.psm1
+		CLIENTSIDEPOWERSHELL\spps.masterpages.psm1 = CLIENTSIDEPOWERSHELL\spps.masterpages.psm1
+		CLIENTSIDEPOWERSHELL\spps.other.psm1 = CLIENTSIDEPOWERSHELL\spps.other.psm1
+		CLIENTSIDEPOWERSHELL\spps.psm1 = CLIENTSIDEPOWERSHELL\spps.psm1
+		CLIENTSIDEPOWERSHELL\spps.sitecolumns.psm1 = CLIENTSIDEPOWERSHELL\spps.sitecolumns.psm1
+		CLIENTSIDEPOWERSHELL\spps.solutions.psm1 = CLIENTSIDEPOWERSHELL\spps.solutions.psm1
+		CLIENTSIDEPOWERSHELL\spps.subsites.psm1 = CLIENTSIDEPOWERSHELL\spps.subsites.psm1
+		CLIENTSIDEPOWERSHELL\spps.usersandgroups.psm1 = CLIENTSIDEPOWERSHELL\spps.usersandgroups.psm1
+		CLIENTSIDEPOWERSHELL\spps.webparts.psm1 = CLIENTSIDEPOWERSHELL\spps.webparts.psm1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SiteTemplates", "SiteTemplates", "{4589C0A6-D8B3-4BF4-B054-1A53A882CDDC}"
+	ProjectSection(SolutionItems) = preProject
+		SiteTemplates\BCP.wsp = SiteTemplates\BCP.wsp
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://danielszego.visualstudio.com/
+		SccLocalPath0 = .
+	EndGlobalSection
+EndGlobal
